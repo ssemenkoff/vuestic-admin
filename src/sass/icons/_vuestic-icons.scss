@@ -9,31 +9,59 @@
 .i-nav-notification {
   @extend .i-nav;
   background: url('./../assets/icons/nav-notifications.svg') no-repeat center;
+
+  .alternative & {
+    background: url('./../assets/icons/nav-notifications-alternative.svg') no-repeat center;
+  }
 }
 
 .i-nav-color {
   @extend .i-nav;
   background: url('./../assets/icons/nav-color.svg') no-repeat center;
+
+  .alternative & {
+    // background: url('./../assets/icons/nav-color-alternative.svg') no-repeat center;
+
+    //This is a hack. Should be reworked
+    filter: invert(46%) sepia(87%) saturate(754%) hue-rotate(203deg) brightness(97%) contrast(87%);
+  }
 }
 
 .i-nav-messages {
   @extend .i-nav;
   background: url('./../assets/icons/nav-messages.svg') no-repeat center;
+
+
+  .alternative & {
+    background: url('./../assets/icons/nav-messages-alternative.svg') no-repeat center;
+  }
 }
 
 .i-nav-search {
   @extend .i-nav;
   background: url('./../assets/icons/nav-search.svg') no-repeat center;
+
+  .alternative & {
+    // background: url('./../assets/icons/nav-search-alternative.svg') no-repeat center;
+  }
 }
 
 .i-menu-expanded {
   @extend .i-nav;
   background: url('./../assets/icons/menu-expanded.svg') no-repeat center;
+
+  .alternative & {
+    background: url('./../assets/icons/menu-expanded-alternative.svg') no-repeat center;
+  }
 }
 
 .i-menu-collapsed {
   @extend .i-nav;
   background: url('./../assets/icons/menu-collapsed.svg') no-repeat center center;
+
+  .alternative & {
+    // background: url('./../assets/icons/menu-collapsed-alternative.svg') no-repeat center;
+  }
 }
 
 // Catchall baseclass

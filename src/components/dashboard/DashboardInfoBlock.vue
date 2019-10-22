@@ -44,7 +44,7 @@
 
     <div class="flex xs12 md6 xl3">
       <va-card
-        stripe="info"
+        stripe="primary"
         title="Component reach theme"
       >
         Buying the right telescope to take your love of astronomy to the

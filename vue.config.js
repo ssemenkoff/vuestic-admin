@@ -45,7 +45,8 @@ if (!process.env.VUE_APP_BOOK) {
       loaderOptions: {
         sass: {
           // Preload vuestic-ui variables and mixins for every component
-          data: `@import "~vuestic-ui/src/components/vuestic-sass/resources/resources.scss";`,
+          // data: `@import "~vuestic-ui/src/components/vuestic-sass/resources/resources.scss";`,
+          data: `@import "../vuestic-ui/src/components/vuestic-sass/themes/alternative.scss";`,
         },
       },
     },

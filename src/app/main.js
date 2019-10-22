@@ -5,16 +5,17 @@ import 'babel-polyfill'
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import { ColorThemePlugin } from 'vuestic-ui/src/services/ColorThemePlugin'
+import { ColorThemePlugin } from '../../../vuestic-ui/src/services/ColorThemePlugin'
 import store from '../store/index'
 import router from '../router/index'
-import VuesticPlugin from 'vuestic-ui/src/components/vuestic-plugin'
+import VuesticPlugin from '../../../vuestic-ui/src/components/vuestic-plugin'
 import '../i18n/index'
 import YmapPlugin from 'vue-yandex-maps'
 import VueClipboard from 'vue-clipboard2'
 import VeeValidate from 'vee-validate'
 
 import '../metrics'
+import { AlternativeColorScheme } from '../../../vuestic-ui/src/services/ColorSchemes'
 
 // NOTE: workaround for VeeValidate + vuetable-2
 Vue.use(VeeValidate, { fieldsBagName: 'formFields' })
@@ -26,10 +27,7 @@ Vue.use(VueClipboard)
 Vue.use(ColorThemePlugin,
   {
     // Add or change theme colors here
-    themes: {
-      // primary: '#f06595',
-      // blurple: '#7289DA',
-    },
+    themes: AlternativeColorScheme,
   })
 
 router.beforeEach((to, from, next) => {
